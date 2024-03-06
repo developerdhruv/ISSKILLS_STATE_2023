@@ -105,3 +105,32 @@ section {
 }
 
 
+/* Media query (Responsive) */
+@media only screen and (max-width: 600px) {
+    body{
+        display: grid;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        height: 280px;
+        border-radius: 25px;
+    }
+    .FormBox{
+        width: 450px;
+        height: 550px;
+        display:grid;
+        align-items:center;
+        justify-content:center;
+        
+    }
+    form{
+        display:grid;
+        align-items:center;
+        justify-content:center;
+    }
+    .FormBox form input{
+        width: 440px;
+    }
+  }

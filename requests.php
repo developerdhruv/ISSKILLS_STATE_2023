@@ -39,6 +39,30 @@
             background-color:#B3DCE4;
             border-radius:30px;
         }
+
+        @media screen and (max-width: 480px){
+            body{
+                display:grid;
+            }
+            nav{
+                display: flex;
+                flex-direction: row;
+                width: 450px;
+                border-radius: 25px;
+                height: 280px;
+            } 
+            
+            table{
+                width: 450px;
+                border-radius: 25px;
+                height: 280px;
+            }
+        }
+
+
+
+
+
     </style>
     
     

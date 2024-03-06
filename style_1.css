@@ -112,6 +112,9 @@ section {
     border-radius: 61px;
     background: #B3DCE4;
     margin-left: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -121,3 +124,49 @@ section {
     
 }
 
+@media only screen and (max-width: 480px) {
+    body {
+      display: grid;
+    }
+      
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        height: 280px;
+        border-radius: 25px;
+    }
+    .RecipeOfDay{
+        width: 450px;
+        height: 840px;
+        display: grid;
+    }
+    .RecipeImg{
+        width: 445px;
+        margin: 0px;
+        
+    }
+    section{
+        display: grid;
+    }
+
+    .recipeCardSection{
+        display: grid;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    .recipeCard{
+        width: 445px;
+        height: 440px;
+        display: grid;
+        
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    section{
+        width: 380px;
+    };
+  }
