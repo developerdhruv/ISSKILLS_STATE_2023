@@ -4,28 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="style_3.css">
+        <link rel="stylesheet" ">
     </head>
     
     
     
     
     <body>
-        <nav>
-            <ul>
-                <li><a href="HomePage.html"> 🥗 Annsksha</a></li>
-                <li><a href="HomePage.html">Home</a></li>
-                <li><a href="index.html">Create Request</a></li>
-                <li><a href="requests.php"></a>Current Requests</li>
-                <li><a href="Community.php">Community</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="imgcom.html">MAKE POST</a></li>
-                
-            </ul>
-
-        </nav>
+        
         <section>
-            <h1>Community</h1>
+            <a href = "home.php">Community</a>
+            <a href = "request.php">Check Donate Requests</a>
             
             
         </section>
@@ -66,10 +55,11 @@ while($fetch = mysqli_fetch_assoc($result)){
 
     ?>
     <div class="card">
-    <img src = "./Uploads/<?php echo $fetch['image']?>" alt = "recipe image" width = 320px height = 300px  ">
+    <img src = "../Uploads/<?php echo $fetch['image']?>" alt = "recipe image" width = 320px height = 300px  ">
     <div class="container">
         <h2><b><?php echo $fetch['name']?></b></h2>
         <a href="<?php echo $fetch['link']?>">Link to video</a>
+        <a href=".\deletecom.php?id=<?php echo $fetch['id']?>">Delete</a>
     </div>
     </div>
    

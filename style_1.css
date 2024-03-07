@@ -47,6 +47,7 @@ nav ul li a{
     transition: 0.3s;
 }
 
+
 section {
     display: grid;
 
@@ -168,5 +169,5 @@ section {
 
     section{
         width: 380px;
-    };
-  }
+    }
+}

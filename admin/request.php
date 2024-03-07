@@ -64,22 +64,14 @@
 
 
     </style>
-    
-    
-    
     <body>
-        <nav>
-            <ul>
-                <li><a href="HomePage.html"> 🥗 Annsksha 🥗</a></li>
-                <li><a href="HomePage.html">Home</a></li>
-                <li><a href="index.html">Create Request</a></li>
-                <li><a href="requests.php">Current Requests</a></li>
-                <li><a href="contact.html">Ahara</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-        </nav>
-
+        <a href = "home.php">Community</a>
+        <a href = "request.php">Check Donate Requests</a>
+        
+    
+    
+    
+    
         <table>
             
             <tr>
@@ -130,7 +122,7 @@ while($row = $result->fetch_assoc()){
     <td>$row[name]</td>
     
     <td>$row[foodvalue]</td>
-    <td><a href='delete.php?id=$row[id]'>Delete</a></td>
+    <td><a href='/DSUIS2023/delete.php?id=$row[id]'>Delete</a></td>
     </tr>
     
     ";
