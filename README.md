@@ -21,4 +21,10 @@ AnnSksha is an food waste management and commmunity building platform. It offers
 ## Validations
 
 ![VALIDATIONS](https://github.com/developerdhruv/ISSKILLS_STATE_2023/assets/109203015/4c4a808a-9b66-4f29-9ea8-83e023bb0684)
-![DEMO](https://youtu.be/j3_0-b-d_vA)
+
+## WORKING DEMO
+
+
+
+https://github.com/developerdhruv/ISSKILLS_STATE_2023/assets/109203015/5ba374b1-a5af-4391-8dc6-45bbce6861dd
+
