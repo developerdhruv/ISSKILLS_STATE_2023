@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['submit'])){
-    $servername = "localhost";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "skills_state";

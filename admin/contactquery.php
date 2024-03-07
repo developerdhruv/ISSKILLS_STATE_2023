@@ -7,17 +7,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <style>
-        body{
-            
-        }
-        section{
-            display:grid;
-        }
         
         table{
             width: 65%;
             border-collapse: collapse;
-            margin-left:0px;
+            margin-left:30px;
             border-radius:30px;
             height: 50px;
 
@@ -41,7 +35,7 @@
             margin: 5px;
 
         }
-        tr:nth-child(odd){
+        tr:nth-child(even){
             background-color:#B3DCE4;
             border-radius:30px;
         }
@@ -61,34 +55,40 @@
             table{
                 width: 450px;
                 border-radius: 25px;
-                height: 220px;
-                
+                height: 280px;
+            }
         }
-
-    }
 
 
 
 
 
     </style>
-    
-    
-    
     <body>
-        <nav>
-            <ul>
-                <li><a href="HomePage.html"> 🥗 Annsksha 🥗</a></li>
-                <li><a href="HomePage.html">Home</a></li>
-                <li><a href="index.html">Create Request</a></li>
-                <li><a href="requests.php">Current Requests</a></li>
-                <li><a href="contact.html">Ahara</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-        </nav>
-
+        <h1>ADMIN PANEL ANNSKSHA</h1>
+        <a href = "home.php">Community</a>
+        <a href = "request.php">Check Donate Requests</a>
+        <a href = "contactquery.php">Contact Queries</a>
         
+    
+    
+    
+    
+        <table>
+            
+            <tr>
+                <th>ID</th>
+                <th>Name </th>
+                <th>Email</th>
+                <th>Message</th>
+                
+                
+
+
+
+
+            </tr>
+        </table>
         
 
     </body>
@@ -108,7 +108,7 @@ if(!$conn){
     die("conn failed". mysqli_connect_error());
 }
 
-$sql =  "SELECT * FROM requests";
+$sql =  "SELECT * FROM contactus";
 
 $result = $conn->query($sql);
 
@@ -118,25 +118,16 @@ if(!$result){
 
 while($row = $result->fetch_assoc()){
     echo "
-    <table>
 
-    <th>ID</th>
-    <th>Name of Orphanage</th>
-    
-    
-    <th>FOOD AMOUNT RAISED</th>
     <tr>
+
     <td>$row[id]</td>
     <td>$row[name]</td>
-    <td>$row[dated]</td>
-    <td>$row[foodvalue]</td>
-    </tr>
-
-
-
-
-    </table>
     
+    <td>$row[email]</td>
+    <td>$row[message]</td>
+    
+    </tr>
     
     ";
 }

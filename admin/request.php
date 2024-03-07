@@ -65,8 +65,10 @@
 
     </style>
     <body>
+        <h1>ADMIN PANEL ANNSKSHA</h1>
         <a href = "home.php">Community</a>
         <a href = "request.php">Check Donate Requests</a>
+        <a href = "contactquery.php">Contact Queries</a>
         
     
     

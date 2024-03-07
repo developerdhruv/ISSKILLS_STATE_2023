@@ -32,8 +32,7 @@ section h2{
     font-family: Inter;
 }
 
-
-section button{
+.btn{
     width: 320px;
     height: 65px;
     border-radius: 32px;
