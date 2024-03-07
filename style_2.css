@@ -1,0 +1,60 @@
+body{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 1100px;
+    height: 70vh;
+    border-radius: 57px;
+    background: #B3DCE4;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1{
+    color: #4c4e4d;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 32px;
+}
+
+section h2{
+    color: #000;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: Inter;
+}
+
+
+section button{
+    width: 320px;
+    height: 65px;
+    border-radius: 32px;
+    background: #72B0A1;
+    display: grid;
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: Inter;
+    border: none;
+    
+    
+}
+
+
+@media screen and (max-width: 480px){
+    section{
+        width: 100%;
+        height: 100%;
+    }
+    
+}

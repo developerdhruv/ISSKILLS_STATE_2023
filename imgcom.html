@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="HomePage.html"> 🥗 Annsksha</a></li>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="index.html">Create Request</a></li>
+                <li><a href="requests.php">Current Requests</a></li>
+                <li><a href="contact.html">Ahara</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <section>
+            <div class="FormBox">
+                <h1>Create Request</h1>
+                <form action="addImg.php" method="post" class="form-control" enctype="multipart/form-data">
+                    
+                    <input type="text" id="name" name="name" placeholder="ENTER DISH NAME" >
+                    
+                    <input type="file" id="file" name="file" placeholder="ADD RECIPE IMAGES">
+                    <input type="text" id="link" name="link" placeholder="ENTEHR LINK">
+                    <button type="submit" id="submit" name="submit">Submit</button>
+                </form>
+
+            </div>
+
+        </section>
+
+    </body>
+</html>
